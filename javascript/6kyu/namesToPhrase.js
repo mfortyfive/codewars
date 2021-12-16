@@ -1,3 +1,5 @@
+// turns array of objects into plain english.
+
 function NamesToPhrase(names) {
   let inEnglish = "";
   for (let i = 0; i < names.length; i++) {
@@ -15,3 +17,5 @@ const test = [{ name: "Bart" }, { name: "Lisa" }, { name: "Maggie" }];
 
 console.log("input:", test);
 console.log("result:", NamesToPhrase(test));
+
+// returns "Bart, Lisa & Maggie"

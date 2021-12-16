@@ -1,4 +1,6 @@
-function findNextSquare(cc) {
+// hides all numbers except last 4 digits.
+
+function maskify(cc) {
   let maskedCc = cc;
   if (cc.length > 4) {
     maskedCc = cc.slice(cc.length - 4);
@@ -12,4 +14,6 @@ function findNextSquare(cc) {
 const test = "4556364607935616";
 
 console.log("input:", test);
-console.log("result:", findNextSquare(test));
+console.log("result:", maskify(test));
+
+// returns "############5616"
